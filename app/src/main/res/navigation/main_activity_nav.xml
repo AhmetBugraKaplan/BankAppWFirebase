@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/loginPageFragment">
+
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.example.bankauygulamasiwfirebase.LoginPageFragment"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/loginToHome"
+            app:destination="@id/homePageFragment"
+            app:popUpTo="@id/loginPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.bankauygulamasiwfirebase.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <argument
+            android:name="fiyat"
+            app:argType="integer" />
+        <action
+            android:id="@+id/homeToSelectedCard"
+            app:destination="@id/selectedCardFragment" />
+        <action
+            android:id="@+id/homeToAddNewCard"
+            app:destination="@id/addNewCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forexFragment"
+        android:name="com.example.bankauygulamasiwfirebase.ForexFragment"
+        android:label="fragment_forex"
+        tools:layout="@layout/fragment_forex" />
+    <fragment
+        android:id="@+id/selectedCardFragment"
+        android:name="com.example.bankauygulamasiwfirebase.SelectedCardFragment"
+        android:label="fragment_selected_card"
+        tools:layout="@layout/fragment_selected_card" >
+        <argument
+            android:name="Name"
+            app:argType="string" />
+        <argument
+            android:name="No"
+            app:argType="string" />
+        <argument
+            android:name="Logo"
+            app:argType="string" />
+        <argument
+            android:name="Key"
+            app:argType="string" />
+        <argument
+            android:name="cardExpirationDate"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewCardFragment"
+        android:name="com.example.bankauygulamasiwfirebase.AddNewCardFragment"
+        android:label="fragment_add_new_card"
+        tools:layout="@layout/fragment_add_new_card" />
+</navigation>

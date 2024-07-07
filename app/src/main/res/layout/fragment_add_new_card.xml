@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    android:backgroundTint="#0E0E0E"
+    tools:context=".AddNewCardFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Card Activation"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Active your Card by entering your card no,expiration date, and security code"
+        android:textAlignment="center"
+        android:textColor="#9C9191"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextCardNo"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80sp"
+        android:ems="10"
+        android:hint="16 Digit Card Number"
+        android:inputType="number"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#7C7777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextCardName"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80sp"
+        android:ems="10"
+        android:hint="Card Name"
+        android:inputType="text"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#7C7777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextCardNo" />
+
+    <EditText
+        android:id="@+id/editTextExpirDate"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80sp"
+        android:ems="10"
+        android:hint="Expiration Date (MM/YY)"
+        android:inputType="text"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#7C7777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextCardName" />
+
+    <Button
+        android:id="@+id/buttonActivate"
+        android:layout_width="355dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#FBF8F8"
+        android:shadowColor="#F1E7E7"
+        android:text="Activate"
+        android:textColor="#221C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#E6D8D8"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_qr"
+        android:title="QR Payment" />
+    <item
+        android:id="@+id/homePageFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_home"
+        android:title="Home Page" />
+    <item
+        android:id="@+id/forexFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_transfer"
+        android:title="My Portfolio" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_love"
+        android:title="For You" />
+</menu>
